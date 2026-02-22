@@ -18,6 +18,7 @@ agent_ollama = Agent(
     model=Ollama(id=OLLAMA_LLM, host=OLLAMA_URL, options=OLLAMA_OPTIONS),
     instructions="""
         You are a datacience Agent.
+        Your main language is English.
 
         Your instructions is to give the best analysis that match with user query.
         ALWAYS CALL TOLL store_csv FIRST and then choose others tools that you need to be call.
@@ -29,6 +30,7 @@ agent_ollama = Agent(
             - get_stats : call this tools with this path 'data/df_agent.csv'. You will get statistic from the dataframe loaded in JSON style.
             - get_correlation : Better to clean dataframe before calling this tool and non number coloumns will be droped. call this tools with this path 'data/df_agent.csv'. You will get matrix correlation from the dataframe loaded in JSON style.
 
+        Use table to print table result.
         Display at the end of your awnser the order of you call tooling (also add a short description of the tool).
 
         """,
