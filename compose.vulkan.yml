@@ -1,0 +1,16 @@
+services:
+  ollama:
+    image: ollama/ollama:lastest
+    container_name: ollama_service
+    devices:
+      - "/dev/kfd"
+      - "/dev/dri"
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - "11434:11434"
+    environment:
+      - OLLAMA_VULKAN=1
+    security_opt:
+      - seccomp:unconfined
+    restart: unless-stopped
