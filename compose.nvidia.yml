@@ -1,7 +1,7 @@
 services:
   ollama:
     image: ollama/ollama:latest
-    container_name: ollama_CUDA
+    container_name: ollama_service
     devices:
       - "/dev/kfd"
       - "/dev/dri"

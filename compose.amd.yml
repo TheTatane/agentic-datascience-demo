@@ -1,7 +1,7 @@
 services:
   ollama:
     image: ollama/ollama:rocm
-    container_name: ollama_ROCm
+    container_name: ollama_service
     devices:
       - "/dev/kfd"
       - "/dev/dri"

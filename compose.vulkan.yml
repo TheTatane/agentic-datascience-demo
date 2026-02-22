@@ -1,7 +1,7 @@
 services:
   ollama:
     image: ollama/ollama:lastest
-    container_name: ollama_VULKAN
+    container_name: ollama_service
     devices:
       - "/dev/kfd"
       - "/dev/dri"
