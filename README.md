@@ -4,21 +4,25 @@ A simple implémentation of Agentic Wordflow and Agent datascience.
 
 ## 🏷️ Description
 
-TDB
+An Agentic demo of a basic data science use case. 
+The goal is to test differences between Agent and Workflow in reliability and complexity.
 
 ## 📍 Index
 
 - [Features](#-features)
-- [Soon](#-installation)
+- [Demo](#-Demo)
+- [Quick start](#-quick-start)
+- [Soon](#-soon)
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
+- [Technology](#-technology)
 - [Project structure](#-project-structure)
 - [Test](#-test)
+- [Warning](#-warning)
 - [License](#-micense)
 
 ## ✅ Features
-
-TDB
+Technology
 
 ## Demo
 
@@ -29,13 +33,9 @@ TDB
 
 ## 🚀 Quick start
 
-```
-1. First go to installation to setup Ollama.
-```
-
-```
-2. You can change CSV file in "data" folder.
-```
+> [!NOTE]
+> 1. First go to installation to setup Ollama.
+> 2. You can change CSV file in "data" folder.
 
 ### Python venv
 
@@ -113,7 +113,6 @@ docker exec -it ollama_service ollama pull qwen3-coder:30b
 
 ## 📂 Project structure
 
-TDB
 
 ## 🧪 Test
 
@@ -126,7 +125,8 @@ This project has been tested on the following hardware configuration:
 
 ## 🚨 Warning
 
-TDB
+> [!NOTE] 
+> CSV data file must be correctly structured.
 
 ## 📃 License
 
